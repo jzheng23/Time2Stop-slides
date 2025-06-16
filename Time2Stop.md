@@ -379,6 +379,8 @@ _total time = average session length * visit frequency. Which part should be aff
 
 --- 
 
+_I will not follow the structure of the paper in reporting the results._
+
 # Data Overview
 
 <!-- header: 'Results' -->
@@ -399,7 +401,7 @@ _total time = average session length * visit frequency. Which part should be aff
 - **Random Forest** performed better (F1 = 66.7%) than NB, LR, SVM, DT, & KNN 
 
 - Key Features
-  - Phone unlock duration
+  - Phone unlock duration _(current session length)_
   - Movement patterns (travel distance, static ratio)
   - Nighttime usage
 
@@ -409,12 +411,43 @@ _total time = average session length * visit frequency. Which part should be aff
 ---
 # Quantitative Results
 
-- Four _or five_ metrics
-  - Accuracy (I agree I am overusing it)
+- Four _(or five)_ metrics
+  - Accuracy ("Yes, I agree I am overusing it.")
   - Receptivity (Choosing "leaving app")
-  - Visit frequency (I opened Twitter 10 times today)
-  - _Session length (Each time I spent 5 minutes in Twitter)_
-  - Total time (I spent 50 minutes in Twitter today)
+  - Visit frequency (I opened Twitter __10__ times today)
+  - _Session length (Each time I spent __5__ minutes in Twitter)_
+  - Total time (I spent __50__ minutes in Twitter today)
 - Four groups: Control, Personalized, Adp-wo-Exp, Adp-w-Exp
 
-- [Click here to make your prediction](https://docs.google.com/spreadsheets/d/1sMDD2J7CTZq2pIjn0F8CSjEEx9UH6mcvJD2H2lqyHJU/edit?usp=sharing)
+- What is effect of Adaptation and Explanation? 
+  - [Click here to make your prediction](https://docs.google.com/spreadsheets/d/1sMDD2J7CTZq2pIjn0F8CSjEEx9UH6mcvJD2H2lqyHJU/edit?usp=sharing)
+
+---
+
+# Effect of Adaptation
+<style scoped>
+.columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+</style>
+
+<div class="columns">
+<div>
+
+- Relative data to Control, _original data not provided_
+- Adaptive = Apt-wo-Exp and Apt-w-Exp merged
+  - _Or should we just use Apt-wo-Exp?_
+- Accuracy: Adaptive outperformed Personalized by 32.8% **
+- Receptivity: Comparison between Adaptive and Personalized not reported
+- 
+
+</div>
+<div>
+
+![w:350px](figure5.png)
+
+</div>
+</div>
