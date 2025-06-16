@@ -155,6 +155,7 @@ An intelligent, adaptive, and explainable JITAI system
 <div>
 
 - Ecological momentary assessment (EMA) 
+  - _Experience sampling method (ESM)_
   - Whether users are overusing the phones 
   - Ensures timely, contextually relevant labels 
 
@@ -305,9 +306,9 @@ _How would you feel upon seeing each explanation?_
 - Modeling (2 weeks): to collect features and labels for the initial models training
 - Break (1 week): to mitigate carry-over effects from label collection
   - Label collection may affect phone usage. 
-  - _What about the label collection for models updating?_
 - Baseline (1 week): to collect app usage data with no intervention
 - Intervention (4 weeks): daily micro-randomized trials of four interventions
+  - _What about the label collection for models updating here?_
 
 ---
 
@@ -376,7 +377,44 @@ _total time = average session length * visit frequency. Which part should be aff
 - Questions: "What do you think of the four intervention techniques?" "Reason behind preference ranking?" "Thoughts on explanations?"  
 - Analyzed using thematic analysis
 
----
+--- 
+
+# Data Overview
 
 <!-- header: 'Results' -->
 
+- Collected Data
+  - 497,458 minutes of usage from 149 apps (17 ± 5 apps per person)
+  - 207,898 app sessions
+  - 75,670 modeling-phase labels (60.5% entry, 24.5% using, 14.9% exit) 
+    - _Why so much difference between the three types?_
+  - 39,188 intervention-phase labels (user feedback)
+
+
+
+---
+
+# Model, Feature, & Intervention Frequency
+
+- **Random Forest** performed better (F1 = 66.7%) than NB, LR, SVM, DT, & KNN 
+
+- Key Features
+  - Phone unlock duration
+  - Movement patterns (travel distance, static ratio)
+  - Nighttime usage
+
+- Control sent more interventions than the other three conditions 
+  - _How to interpret this?_
+
+---
+# Quantitative Results
+
+- Four _or five_ metrics
+  - Accuracy (I agree I am overusing it)
+  - Receptivity (Choosing "leaving app")
+  - Visit frequency (I opened Twitter 10 times today)
+  - _Session length (Each time I spent 5 minutes in Twitter)_
+  - Total time (I spent 50 minutes in Twitter today)
+- Four groups: Control, Personalized, Adp-wo-Exp, Adp-w-Exp
+
+- [Click here to make your prediction](https://docs.google.com/spreadsheets/d/1sMDD2J7CTZq2pIjn0F8CSjEEx9UH6mcvJD2H2lqyHJU/edit?usp=sharing)
