@@ -31,12 +31,12 @@ _Why I chose this paper?_
 
 - _Problematic Smartphone Usage_
 - Consequences
-  * Physical health: headaches, chronic neck pain, sleep disturbance
-  * Mental well-being: anxiety, depression, impaired cognitive abilities
-  * Social wellness: distraction, family conflicts,  performance degradation
+  - Physical health: headaches, chronic neck pain, sleep disturbance
+  - Mental well-being: anxiety, depression, impaired cognitive abilities
+  - Social wellness: distraction, family conflicts,  performance degradation
 
-* Existing digital intervention tools
-  * Often rely on **simple criteria** like pre-determined intervals or app-specific triggers
+- Existing digital intervention tools
+  - Often rely on **simple criteria** like pre-determined intervals or app-specific triggers
 
 ---
 
@@ -81,13 +81,13 @@ Dual process theory
 
 # Identifying the Research Gap
 
-* AI-based JITAI for Smartphone Overuse
-  * Very little prior work, which are rule-based
-  * Without a human-in-the-loop setup
+- AI-based JITAI for Smartphone Overuse
+  - Very little prior work, which are rule-based
+  - Without a human-in-the-loop setup
 
-* Integrating XAI into JITAI-based Smartphone Interventions
-  * Unexplored in prior work
-  * Potential to improve transparency, handle confusion, and cultivate user trust
+- Integrating XAI into JITAI-based Smartphone Interventions
+  - Unexplored in prior work
+  - Potential to improve transparency, handle confusion, and cultivate user trust
 
 ---
 
@@ -110,10 +110,10 @@ Dual process theory
 
 An intelligent, adaptive, and explainable JITAI system
 
-* Intelligent: leverages machine learning
-* Adaptive: collects user feedback to adapt the intervention model over time
-* Explainable: introduces interventions with AI explanations
-* JIT: intervenes at the optimal intervention timings
+- Intelligent: leverages machine learning
+- Adaptive: collects user feedback to adapt the intervention model over time
+- Explainable: introduces interventions with AI explanations
+- JIT: intervenes at the optimal intervention timings
 * _How to isolate the effect of each feature?_
 </div>
 <div>
@@ -161,7 +161,7 @@ An intelligent, adaptive, and explainable JITAI system
 
 (5) Time - An objective temporal feature
 
-*Is it collecting too many data?*
+*Is it collecting too many data? Will demographic data be useful?*
 
 ---
 
@@ -188,7 +188,7 @@ An intelligent, adaptive, and explainable JITAI system
   - Entry-moment: opening a monitored app
   - Leaving-moment: leaving a monitored app
   - During Usage: every 10 minutes during usage
-    - *Is 10 minutes granular enough?*
+    * *Is 10 minutes granular enough?*
 
 - A _unknown_ cool-down interval
 
@@ -223,7 +223,7 @@ An intelligent, adaptive, and explainable JITAI system
 - Adopts decay-based sample weight assignment (recent data receives relatively higher weights)
   - Most recent day's weight: 1.0
   - Linearly decreases to 0.5 every half-week
-- To capture current trends while gradually reducing the impact of outdated information
+  - To capture current trends while gradually reducing the impact of outdated information
 
 </div>
 <div>
@@ -270,7 +270,7 @@ An intelligent, adaptive, and explainable JITAI system
 # Examples of Explanantion
 
 ![w:1100px](figures/table2.png)
-_How would you feel upon seeing each explanation?_
+* _How would you feel upon seeing each explanation?_
 
 ---
 
@@ -290,10 +290,10 @@ _How would you feel upon seeing each explanation?_
 
 - Users select their "monitored apps"
 - ML model predicts __"overuse" or not__ based on current context and app usage upon app launching and every five minutes afterward. 
-  - _Is five minutes granular enough?_
+  * _Is five minutes granular enough?_
 - If "overuse", type 12 randomly generated digits to __continue using__, or directly __leave app__
 - Neither easily circumvented nor overly restrictive
-  - _How restrictive or annoying is it?_
+  * _How restrictive or annoying is it?_
 
 </div>
 <div>
@@ -320,7 +320,7 @@ _How would you feel upon seeing each explanation?_
   - Initial 127 participants
   - 49 discontinued due to personal reasons, software/hardware issues, compatibility, privacy, or battery concerns 
   - 7 more excluded for insufficient data
-  - _71/127 = 56%_
+  * _71/127 = 56%_
 
 ---
 
@@ -333,7 +333,7 @@ _How would you feel upon seeing each explanation?_
   - Label collection may affect phone usage. 
 - Baseline (1 week): to collect app usage data with no intervention
 - Intervention (4 weeks): daily micro-randomized trials of four interventions
-  - _What about the label collection for models updating here?_
+  * _What about the label collection for models updating here?_
 
 ---
 
@@ -341,8 +341,8 @@ _How would you feel upon seeing each explanation?_
 
 ![w:600](figures/table1.png)
 
-- _What should the Control group be like based on the research gap?_
-- _Other possibilities: Non-Personalized (Global), Personalized-w-Exp_
+* _What should the Control group be like based on the research gap?_
+* _Other possibilities: Non-Personalized (Global), Personalized-w-Exp_
 
 
 ---
@@ -361,7 +361,7 @@ _How would you feel upon seeing each explanation?_
 ![w:600](figures/table1.png)
 
 - Interface for Control, Personalized, and Adaptive-wo-Exp was identical _(i.e., no explanation)_ to reduce bias. 
-  - _Which should be the baseline for the Adaptive-w-Exp? No Exp, or random Exp?_
+  * _Which should be the baseline for the Adaptive-w-Exp? No Exp, or random Exp?_
 
 ---
 
@@ -373,7 +373,7 @@ Micro-Randomized Trials (MRT).
 - Intervention type was altered on a daily basis. 
 - Latin Square design (n=4) used to diversify the order and reduce order effects. 
 - Participants were __not informed__ of the specific order or dates of intervention types during the study to reduce cognitive bias.
-  - _But were they blind to what condition they were in each day?_
+  * _But were they blind to what condition they were in each day?_
 
 ---
 
@@ -381,15 +381,15 @@ Micro-Randomized Trials (MRT).
 
 1. Intervention Accuracy: proportion of interventions marked as "correct"
 2. Intervention Receptivity: proportion of interventions responded by "leaving app"
-   - _What are accuracy and receptivity? What is the relationship between them?_
+   * _What are accuracy and receptivity? What is the relationship between them?_
 
 3. App Usage Duration: __total__ time spent on monitored applications
    - “The average time spent on monitored apps during the baseline week was 214.00 minutes (SD = 103.57).” (Page 12, Section 6.4.2)
 
 4. App Visit Frequency: number of times monitored applications were launched
-    - _Not about stopping, but __starting__ the usage_
+    * _Not about stopping, but __starting__ the usage_
 
-_total time = average session length * visit frequency. Which part should be affected?_
+* _total time = average session length * visit frequency. Which part should be affected?_
 
 ---
 
@@ -416,7 +416,7 @@ _I will not follow the structure of the paper in reporting the results._
   - 497,458 minutes of usage from 149 apps (17 ± 5 apps per person)
   - 207,898 app sessions
   - 75,670 modeling-phase labels (60.5% entry, 24.5% using, 14.9% exit) 
-    - _Why so much difference between the three types?_
+    * _Why so much difference between the three types?_
   - 39,188 intervention-phase labels (user feedback)
 
 
@@ -433,7 +433,7 @@ _I will not follow the structure of the paper in reporting the results._
   - Nighttime usage
 
 - Control sent more interventions than the other three conditions 
-  - _How to interpret this?_
+  * _How to interpret this?_
 
 ---
 # Quantitative Results
@@ -469,7 +469,7 @@ _I will not follow the structure of the paper in reporting the results._
   - _Or should we just use Adaptive-wo-Exp?_
 - Accuracy: Adaptive outperformed Personalized
 - Receptivity: Comparison between Adaptive and Personalized not reported
-- _Is the effect coming from the adaptivity or explanation?_
+* _Is the effect coming from the adaptivity or explanation?_
 
 </div>
 <div>
@@ -498,7 +498,7 @@ _I will not follow the structure of the paper in reporting the results._
 - _If we compare Adaptive-wo-Exp (blue) with Personalized (yellow)_
   - _Accuracy: not reported_
   - _Receptivity: not reported_
-- _I will not say that adaptation alone improved accuracy or receptivity._
+* _I will not say that adaptation alone improved accuracy or receptivity._
 </div>
 <div>
 
@@ -545,7 +545,7 @@ _I will not follow the structure of the paper in reporting the results._
 - _What about session length?_
 - _I calculated the session length:_
 ![w:1000px](figures/descriptive.png)
-- _I guess there was no difference in session length between groups._
+* _I guess there was no difference in session length between groups._
 
 ---
 
@@ -679,9 +679,21 @@ _Is Adaptive-w-Exp ranked higher than Adaptive-wo-Exp?_
 
 ---
 
+# More Advanced Explanation Generation?
+
+"Although most participants found explanations helpful for self-reflection, some found explanations confusing and overly broad.
+
+This illustrates the need for **more advanced explanation generation techniques** in future deployment." (Page 15, Section 7.1)
+
+* _Is explanation always necessary and beneficial?_
+
+
+
+---
+
 # Thank you!
 
 - The slides are made with [Marp](https://marp.app/), [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode), and [Marp CLI](https://github.com/marp-team/marp-cli).
-- Theme [academic](https://github.com/kaisugi/marp-theme-academic) by [Kaito Sugimoto](https://github.com/kaisugi), slightly modified by me
-- Some scripts are generated by ChatGPT.
-- I will keep the [repository]() public until the end of the week if anyone is interested. 
+  - Theme [academic](https://github.com/kaisugi/marp-theme-academic) by [Kaito Sugimoto](https://github.com/kaisugi), slightly modified by me
+  - Some scripts are generated by ChatGPT.
+- I will keep the [repository](https://github.com/jzheng23/Time2Stop-slides) public until the end of the week if anyone is interested. 
