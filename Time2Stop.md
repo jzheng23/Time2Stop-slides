@@ -16,10 +16,12 @@ CHI 24
 Jian Zheng
 as an appreciative presenter with some _comments & questions_
 
+_Why I chose this paper?_
+
 06/18/2025
 
 ---
-![bg](authors3.png)
+![bg](figures/authors3.png)
 
 
 ---
@@ -69,7 +71,7 @@ as an appreciative presenter with some _comments & questions_
 </div>
 <div>
 
-![w:300](dual_process.png)
+![w:300](figures/dual_process.png)
 Dual process theory
 
 </div>
@@ -93,18 +95,41 @@ Dual process theory
 
 <!-- header: 'Design of Time2Stop' -->
 
+
+<style scoped>
+.columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+</style>
+
+<div class="columns">
+<div>
+
 An intelligent, adaptive, and explainable JITAI system
 
 * Intelligent: leverages machine learning
 * Adaptive: collects user feedback to adapt the intervention model over time
 * Explainable: introduces interventions with AI explanations
 * JIT: intervenes at the optimal intervention timings
+* _How to isolate the effect of each feature?_
+</div>
+<div>
+
+![w:350px](figures/figure2-2.png)
+
+</div>
+</div>
+
+
 
 ---
 
 # System Overview
 
-![w:1000](figure1.png)
+![w:1000](figures/figure1.png)
 
 ---
 
@@ -170,7 +195,7 @@ An intelligent, adaptive, and explainable JITAI system
 </div>
 <div>
 
-![w:350px](figure2-1.png)
+![w:350px](figures/figure2-1.png)
 
 </div>
 </div>
@@ -203,7 +228,7 @@ An intelligent, adaptive, and explainable JITAI system
 </div>
 <div>
 
-![w:350px](figure2-2.png)
+![w:350px](figures/update.png)
 
 </div>
 </div>
@@ -235,7 +260,7 @@ An intelligent, adaptive, and explainable JITAI system
 </div>
 <div>
 
-![w:350px](figure2-2.png)
+![w:350px](figures/explanation.png)
 
 </div>
 </div>
@@ -244,7 +269,7 @@ An intelligent, adaptive, and explainable JITAI system
 
 # Examples of Explanantion
 
-![w:1100px](table2.png)
+![w:1100px](figures/table2.png)
 _How would you feel upon seeing each explanation?_
 
 ---
@@ -273,7 +298,7 @@ _How would you feel upon seeing each explanation?_
 </div>
 <div>
 
-![w:350px](figure2-2.png)
+![w:350px](figures/intervention.png)
 
 </div>
 </div>
@@ -282,7 +307,7 @@ _How would you feel upon seeing each explanation?_
 
 # System Overview
 
-![w:1000](figure1.png)
+![w:1000](figures/figure1.png)
 
 ---
 # Participants
@@ -301,7 +326,7 @@ _How would you feel upon seeing each explanation?_
 
 # Procedure
 
-![](figure4.png)
+![](figures/figure4.png)
 
 - Modeling (2 weeks): to collect features and labels for the initial models training
 - Break (1 week): to mitigate carry-over effects from label collection
@@ -314,16 +339,17 @@ _How would you feel upon seeing each explanation?_
 
 # Intervention
 
-![w:600](table1.png)
+![w:600](figures/table1.png)
 
-_What shoud the Control group be like based on the research gap?_
+- _What should the Control group be like based on the research gap?_
+- _Other possibilities: Non-Personalized (Global), Personalized-w-Exp_
 
 
 ---
 
 # Intervention (Cont.)
 
-![w:600](table1.png)
+![w:600](figures/table1.png)
 
 - Control: intervened based on a fixed probability derived from each participant's percentage of __overuse__ during the initial modeling phase
 - Personalized: the user's own data has a higher weight (10:1) to other users' data
@@ -332,7 +358,7 @@ _What shoud the Control group be like based on the research gap?_
 
 # Intervention (Cont.)
 
-![w:600](table1.png)
+![w:600](figures/table1.png)
 
 - Interface for Control, Personalized, and Adaptive-wo-Exp was identical _(i.e., no explanation)_ to reduce bias. 
   - _Which should be the baseline for the Adaptive-w-Exp? No Exp, or random Exp?_
@@ -361,6 +387,7 @@ Micro-Randomized Trials (MRT).
    - “The average time spent on monitored apps during the baseline week was 214.00 minutes (SD = 103.57).” (Page 12, Section 6.4.2)
 
 4. App Visit Frequency: number of times monitored applications were launched
+    - _Not about stopping, but __starting__ the usage_
 
 _total time = average session length * visit frequency. Which part should be affected?_
 
@@ -368,14 +395,14 @@ _total time = average session length * visit frequency. Which part should be aff
 
 # Evaluation Metrics — Qualitative
 
-## Post-Study Questionnaire  
-- Participants were informed of the exact dates for each intervention type at the end _(of the four-week)_ to aid recall.  
-- To rank the four intervention types based on their preferences.  
-- To rate perceived accuracy, effectiveness, and level of trust for each type.
+- Post-Study Questionnaire _(qualitative?)_ 
+  - Participants were informed of the exact dates for each intervention type at the end _(of the four-week)_ to aid recall.  
+  - To rank the four intervention types based on their preferences.  
+  - To rate perceived accuracy, effectiveness, and level of trust for each type.
 
-## Semi-structured Exit Interviews  
-- Questions: "What do you think of the four intervention techniques?" "Reason behind preference ranking?" "Thoughts on explanations?"  
-- Analyzed using thematic analysis
+- Semi-structured Exit Interviews  
+  - Questions: "What do you think of the four intervention techniques?" "Reason behind preference ranking?" "Thoughts on explanations?"  
+  - Analyzed using thematic analysis
 
 --- 
 
@@ -417,14 +444,14 @@ _I will not follow the structure of the paper in reporting the results._
   - Visit frequency (I opened Twitter __10__ times today)
   - _Session length (Each time I spent __5__ minutes in Twitter)_
   - Total time (I spent __50__ minutes in Twitter today)
-- Four groups: Control, Personalized, Adp-wo-Exp, Adp-w-Exp
+- Four groups: Control, Personalized, Adaptive-wo-Exp, Adaptive-w-Exp
 
 - What is effect of Adaptation and Explanation? 
   - [Click here to make your prediction](https://docs.google.com/spreadsheets/d/1sMDD2J7CTZq2pIjn0F8CSjEEx9UH6mcvJD2H2lqyHJU/edit?usp=sharing)
 
 ---
 
-# Effect of Adaptation
+# Adaptation → Accuracy & Receptivity
 <style scoped>
 .columns {
   display: grid;
@@ -437,17 +464,224 @@ _I will not follow the structure of the paper in reporting the results._
 <div class="columns">
 <div>
 
-- Relative data to Control, _original data not provided_
-- Adaptive = Apt-wo-Exp and Apt-w-Exp merged
-  - _Or should we just use Apt-wo-Exp?_
-- Accuracy: Adaptive outperformed Personalized by 32.8% **
+- Normalized data against Control, _original data not provided_
+- Adaptive = Adaptive-wo-Exp and Adaptive-w-Exp merged
+  - _Or should we just use Adaptive-wo-Exp?_
+- Accuracy: Adaptive outperformed Personalized
 - Receptivity: Comparison between Adaptive and Personalized not reported
-- 
+- _Is the effect coming from the adaptivity or explanation?_
 
 </div>
 <div>
 
-![w:350px](figure5.png)
+![w:350px](figures/figure5.png)
 
 </div>
 </div>
+
+---
+
+# Adaptation → Accuracy & Receptivity _(Mine)_
+<style scoped>
+.columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+</style>
+
+<div class="columns">
+<div>
+
+
+- _If we compare Adaptive-wo-Exp (blue) with Personalized (yellow)_
+  - _Accuracy: not reported_
+  - _Receptivity: not reported_
+- _I will not say that adaptation alone improved accuracy or receptivity._
+</div>
+<div>
+
+![w:350px](figures/figure6.png)
+
+</div>
+</div>
+
+---
+
+# Adaptation &rarr; Usage Behavior
+<style scoped>
+.columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+</style>
+
+<div class="columns">
+<div>
+
+- Normalized data against _what? Why baseline is not 1.0?_
+- Visit frequency
+  - Adaptive-wo-Exp (blue) was fewer (8.9%) than __baseline__ (p < 0.01)
+  - Adaptive-w-Exp (green) was marginally fewer (7.0%) than __baseline__ (p = 0.07)
+  - "This showed the advantage of the two adaptive methods over the Personalized and Control methods." (Page 12, Section 6.4.1) _really?_
+- Total time: no significant difference 
+
+
+</div>
+<div>
+
+![w:350px](figures/figure8.png)
+
+</div>
+</div>
+
+---
+
+# Adaptation &rarr; Usage Behavior _(Mine)_
+
+- _What about session length?_
+- _I calculated the session length:_
+![w:1000px](figures/descriptive.png)
+- _I guess there was no difference in session length between groups._
+
+---
+
+# Summary of Adaptation's Effect
+
+- Accuracy
+  - Adaptive-w-Exp and Adaptive-wo-Exp combined, better then Personalized
+  - Adaptive-wo-Exp alone, better than Control but not better than Personalized
+- Receptivity. Better than Control but not better than Personalized
+- Visit frequency. Fewer than baseline, but not Control or Personalized.
+- Session length. No effect
+- Total time. No effect
+
+"Adaptive models significantly outperform the baseline methods on intervention accuracy and receptivity." (Abstract)
+_Adaptation alone did not improve beyond Personalized_
+
+---
+
+# Explanation &rarr; Accuracy & Receptivity
+<style scoped>
+.columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+</style>
+
+<div class="columns">
+<div>
+
+- Accuracy: Adaptive-w-Exp outperformed Adaptive-wo-Exp
+- Receptivity: Adaptive-w-Exp marginally outperformed Adaptive-wo-Exp
+
+Explanation improved accuracy and Receptivity.
+
+</div>
+<div>
+
+![w:350px](figures/figure6.png)
+
+</div>
+</div>
+
+
+
+---
+
+# Explanation &rarr; Usage Behavior
+<style scoped>
+.columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+</style>
+
+<div class="columns">
+<div>
+
+- Visit frequency
+  - Adaptive-w-Exp (green) was marginally fewer (7.0%) than __baseline__ (p = 0.07)
+- Total time: no significant difference 
+- _Session length: no significant difference_
+
+The comparison between Adaptive-w-Exp and Adaptive-w-Exp suggested that adding explanation increased (insignificantly) the visit frequency and total time. 
+
+</div>
+<div>
+
+![w:350px](figures/figure8.png)
+
+</div>
+</div>
+
+---
+
+# Results from the Questionnaire
+
+![w:900px](figures/figure9.png)
+"the intervention order was presented to participants. They then filled out the questionnaire" (Page 9, Section 5.2)
+_It will be more convincing if interventions were refereed as A, B, C, & D._
+_Is Adaptive-w-Exp ranked higher than Adaptive-wo-Exp?_
+
+---
+
+# Results from the Interview
+
+- General preference for adaptive intervention methods. 
+  - Participants "felt the difference" as adaptive versions "had been learning" about their behavior, leading to more "comfortable" intervention timing over time. 
+- Mixed reaction to the explanation
+  - Some found explanations fostered self-awareness, prompted reflection, and built trust 
+  - Others viewed them as "overly broad," confusing, or "unnecessary"
+
+---
+
+# Summary of the results
+
+- Control condition (random intervention) reduced visit frequency (and thus total time) but not session length.
+- Personalized condition outperformed Control in accuracy and receptivity but not in usage behavior change.
+- Adaptive-wo-Exp had similar performance to Personalized condition.
+- Adaptive-w-Exp outperformed Adaptive-wo-Exp in accuracy and (marginally) receptivity but not in usage behavior (actual insignificantly worse than Adaptive-wo-Exp).
+
+---
+# What are accuracy, receptivity, & the gap in between?
+
+<!-- header: 'Discussion' -->
+
+<style scoped>
+.columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+</style>
+
+<div class="columns">
+<div>
+
+![w:650](figures/quadrants.png)
+
+</div>
+<div>
+
+![w:500](figures/scatter.png)
+
+</div>
+</div>
+
+---
+
+# Thank you!
+
+- The slides are made with [Marp](https://marp.app/), [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode), and [Marp CLI](https://github.com/marp-team/marp-cli).
+- Theme [academic](https://github.com/kaisugi/marp-theme-academic) by [Kaito Sugimoto](https://github.com/kaisugi), slightly modified by me
+- Some scripts are generated by ChatGPT.
+- I will keep the [repository]() public until the end of the week if anyone is interested. 
