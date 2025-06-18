@@ -51,7 +51,7 @@ def insert_slide_at_position(slides, toc_slide, position):
     return "\n".join(new_slides)
 
 def main():
-    with open("Time2Stop.md", "r", encoding="utf-8") as f:
+    with open("Time2Stop_raw.md", "r", encoding="utf-8") as f:
         content = f.read()
 
     sections = extract_sections_with_slides(content)
@@ -61,10 +61,10 @@ def main():
     # Insert the TOC after the second '---' (i.e., before slide 3)
     new_content = insert_slide_at_position(lines, toc_slide, position=4)
 
-    with open("slides_with_toc.md", "w", encoding="utf-8") as f:
+    with open("Time2Stop.md", "w", encoding="utf-8") as f:
         f.write(new_content)
 
-    print("✅ TOC inserted at Slide 3 without 'Slides' label")
+    print("TOC inserted at Slide 3 without 'Slides' label")
 
 if __name__ == "__main__":
     main()

@@ -25,15 +25,6 @@ _Why I chose this paper?_
 
 
 ---
-# Contents
-
-1. Introduction  ..............  4–7
-2. Design of Time2Stop  .......  8–17
-3. Evalution  .................  18–25
-4. Results  ...................  26–38
-5. Discussion  ................  39–41
-
----
 # Smartphone Overuse
 <!-- paginate: true -->
 <!-- header: 'Introduction'  -->
@@ -640,7 +631,7 @@ The comparison between Adaptive-w-Exp and Adaptive-w-Exp suggested that adding e
 
 # Results from the Questionnaire
 
-![w:900px](figures/figure9.png)
+![w:800px](figures/figure9.png)
 "the intervention order was presented to participants. They then filled out the questionnaire" (Page 9, Section 5.2)
 * _It will be more convincing if interventions were refereed as A, B, C, & D._
 * _Is Adaptive-w-Exp ranked higher than Adaptive-wo-Exp?_
