@@ -29,7 +29,7 @@ _Why I chose this paper?_
 
 1. Introduction  ..............  4–7
 2. Design of Time2Stop  .......  8–17
-3. Evalution  .................  18–25
+3. Evaluation  .................  18–25
 4. Results  ...................  26–38
 5. Discussion  ................  39–41
 
@@ -323,7 +323,7 @@ An intelligent, adaptive, and explainable JITAI system
 ---
 # Participants
 
-<!-- header: 'Evalution' -->
+<!-- header: 'Evaluation' -->
 
 - Recruited from university community forums 
 - Selected based on Android smartphone use and high Smartphone Addiction Scale (SAS) score (>120) 
@@ -397,7 +397,7 @@ Micro-Randomized Trials (MRT).
 3. App Usage Duration: __total__ time spent on monitored applications
 
 4. App Visit Frequency: number of times monitored applications were launched
-    * _Not about stopping, but __starting__ the usage_
+    * _Not about stopping, but __starting__ the usage; more susceptible to prevention_
 
 * _total time = average session length * visit frequency._ 
 * _How will Time2Stop affect your phone usage behavior, if you were a participant?_
