@@ -640,10 +640,10 @@ The comparison between Adaptive-w-Exp and Adaptive-w-Exp suggested that adding e
 
 # Results from the Questionnaire
 
-![w:900px](figures/figure9.png)
+![w:800px](figures/figure9.png)
 "the intervention order was presented to participants. They then filled out the questionnaire" (Page 9, Section 5.2)
-* _It will be more convincing if interventions were refereed as A, B, C, & D._
-* _Is Adaptive-w-Exp ranked higher than Adaptive-wo-Exp?_
+- _It will be more convincing if interventions were refereed as A, B, C, & D._
+- _Is Adaptive-w-Exp ranked higher than Adaptive-wo-Exp?_
 
 ---
 
